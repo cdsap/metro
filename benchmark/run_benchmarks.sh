@@ -340,6 +340,7 @@ run_scenarios() {
             --scenario-file benchmark.scenarios \
             --output-dir "$scenario_output_dir" \
             --gradle-user-home ~/.gradle \
+            --gradle-version "9.2.1"
             ${profile_args[@]+"${profile_args[@]}"} \
             "$scenario" \
             || {
